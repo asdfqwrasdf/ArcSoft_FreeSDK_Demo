@@ -55,7 +55,7 @@ class AFR_FSDK_FACEMODEL(Structure):
 if platform.system() == u'Windows':
     internalLibrary = CDLL(u'libarcsoft_fsdk_face_recognition.dll')
 else:
-    internalLibrary = CDLL(u'libarcsoft_fsdk_face_recognition.so')
+    internalLibrary = CDLL(u'./libarcsoft_fsdk_face_recognition.so')
 
 AFR_FSDK_InitialEngine = internalLibrary.AFR_FSDK_InitialEngine
 AFR_FSDK_UninitialEngine = internalLibrary.AFR_FSDK_UninitialEngine

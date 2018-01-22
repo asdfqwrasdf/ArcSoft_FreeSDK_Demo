@@ -5,7 +5,7 @@ import platform
 if platform.system() == u'Windows':
     internalLibrary = cdll.msvcrt
 else:
-    internalLibrary = CDLL(u'libc.so')
+    internalLibrary = CDLL(u'libc.so.6')
 
 malloc = internalLibrary.malloc
 free = internalLibrary.free

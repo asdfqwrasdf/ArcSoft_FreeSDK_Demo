@@ -32,7 +32,7 @@ AFD_FSDK_FOC_330 = 0xc;  # 330 degree
 if platform.system() == u'Windows':
     internalLibrary = CDLL(u'libarcsoft_fsdk_face_detection.dll')
 else:
-    internalLibrary = CDLL(u'libarcsoft_fsdk_face_detection.so')
+    internalLibrary = CDLL(u'./libarcsoft_fsdk_face_detection.so')
 
 AFD_FSDK_InitialFaceEngine = internalLibrary.AFD_FSDK_InitialFaceEngine
 AFD_FSDK_UninitialFaceEngine = internalLibrary.AFD_FSDK_UninitialFaceEngine
